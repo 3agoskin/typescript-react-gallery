@@ -1,0 +1,20 @@
+.webelartGallery {
+    user-select: none;
+
+    &Container {
+        position: relative;
+        margin-bottom: 5px;
+    }
+
+    &Navigation {
+        position: absolute;
+        bottom: 10px;
+        z-index: 3;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    &PreviewList {
+        margin: 0 auto;
+    }
+}
