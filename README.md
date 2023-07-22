@@ -1,2 +1,1 @@
 # typescript-react-gallery
-gg
