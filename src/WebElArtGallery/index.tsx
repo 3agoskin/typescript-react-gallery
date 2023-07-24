@@ -1,5 +1,5 @@
 import { Photo } from "./types";
-import { MainPhoto } from "./MainPhoto";
+import { TransitionPhoto } from "./TransitionPhoto";
 import { PreviewGallery } from "./PreviewGallery";
 import { Navigation } from "./Navigation";
 
@@ -25,10 +25,9 @@ export const WebElArtGallery: React.FC<WebElArtGalleryProps> = ({
     return (
         <div className={style.webelartGallery}>
             <div className={style.webelartGalleryContainer}>
-                <MainPhoto 
-                    prevPhoto={prevPhoto}
-                    activePhoto={activePhoto}
-                    nextPhoto={nextPhoto}
+                <TransitionPhoto 
+                    photos={photos}
+                    indexActivePhoto={indexActivePhoto}
                 />
                 <Navigation 
                     className={style.webelartGalleryNavigation}
