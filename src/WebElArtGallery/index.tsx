@@ -18,7 +18,6 @@ export const WebElArtGallery: React.FC<WebElArtGalleryProps> = ({
     }
 
     const [indexActivePhoto, setIndexActivePhoto] = useState(0);
-    const activePhoto = photos[indexActivePhoto];
     const prevPhoto = photos[indexActivePhoto - 1];
     const nextPhoto = photos[indexActivePhoto + 1];
 
@@ -45,6 +44,7 @@ export const WebElArtGallery: React.FC<WebElArtGalleryProps> = ({
                 activePhotoIndex={indexActivePhoto}
                 photos={photos}
                 className={style.webelartGalleryPreviewList}
+                setNewPhoto={setIndexActivePhoto}
             /> 
         </div>
     )

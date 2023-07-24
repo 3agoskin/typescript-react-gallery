@@ -1,24 +1,27 @@
 .previewGallery {
-    width: 492px;
+    width: 100%;
     overflow: hidden;
     position: relative;
 
     &Track {
         position: relative;
-        left: 164px;
+        left: 365px;
         display: flex;
         white-space: nowrap;
         transition: transform 0.5s ease-out;
     }
 
     &Preview {
-        min-width: 154px;
+        width: 154px;
         margin: 5px;
         display: inline-block;
         height: 80px;
         background: #97a9b2;
         border-radius: 5px;
         overflow: hidden;
+        border: none;
+        background: none;
+        padding: 0;
     }
 
     &Cover {
